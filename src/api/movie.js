@@ -1,11 +1,12 @@
 const api_url = import.meta.env.VITE_API_BASE_URL;
-const search_url = import.meta.env.VITE_API_SEARCH_URL
+const search_url = import.meta.env.VITE_API_SEARCH_URL;
+const bearer_token = import.meta.env.VITE_API_BEARER_TOKEN;
 
 const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNDExYTUzZGUzM2YyZDE4OGEzMTcxOTVmNDdmMjg4YiIsIm5iZiI6MTczNDE2OTc1My42MDYwMDAyLCJzdWIiOiI2NzVkNTQ5OWYxYmY5NmRjMjQ3ODA3ZjQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.QlHBZhxR0dWv4TEOFcD42mexjaKsh23ZyJsW-wuNUd4'
+      Authorization: `Bearer ${bearer_token}`
     }
   };
   
